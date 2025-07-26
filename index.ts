@@ -6,14 +6,13 @@ name: string;
 instrument: string; 
 };
 //1
-// console.log(bands.map(band => band.name))
 /*console.log(bands.map(function(band) {
   return band.name;
 })); */
 //2
 /* console.log(bands.map(function(band){
   return band.name, band.genre, band.trackCount })); */
-//3 /*
+//3 
 /*  console.log(bands
   .filter(band => band.foundedYear < 2000)
   .map(band => band.name)  
@@ -39,15 +38,11 @@ console.log(bands
 console.log(bands
   .reduce((accumulator, band) => accumulator + band.trackCount , 0));
 // 9 
-/*let stringArray = ["apple", "banana", "cherry"];
-let arrayLength1 = stringArray.length;
-console.log(arrayLength1); // Виведе 3
-let arrayLength = 
 function bands.members ;
 console.log(arrayLength) */ 
 console.log(bands
   .reduce((accumulator, band) => accumulator + band.members.length, 0))
-// 10 Знайди гурт із найбільшою кількістю треків.
+// 10 
 let maxSongs = bands.reduce((max, band) => {
 if (band.trackCount > max) {
   return band.trackCount;
